@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="wrap_content"
+            android:layout_height="394dp"
+            android:layout_above="@+id/replay_text"
+            android:drawSelectorOnTop="false"
+            android:headerDividersEnabled="true"
+            android:transcriptMode="alwaysScroll"
+             >
+
+        </ListView>
+
+        <EditText
+            android:id="@+id/replay_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+            android:hint="@string/enter_a_message" 
+            />
+
+        <Button
+            android:id="@+id/replay_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send_button" />
+    </LinearLayout>
+
+</RelativeLayout>
